@@ -1,0 +1,217 @@
+/*
+under_base
+----------------------------- */
+.top_p {
+  margin-bottom: 50px;
+}
+
+.hero {
+  height: 240px;
+  position: relative;
+  background-image: url(../images/u_hero.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 75px;
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+.menu {
+  margin: 20px 0 50px;
+  font-size: 1rem;
+}
+
+.menu a {
+  font-weight: 700;
+}
+
+.menu .home_icon {
+  margin-right: 10px;
+}
+
+.menu .arrow_icon {
+  margin: 0 25px;
+}
+
+/*
+table
+----------------------------- */
+.table {
+  margin: 0px 0 80px;
+}
+
+.table .sec_ttl {
+  margin-bottom: 20px;
+}
+
+.table .top_p {
+  margin-bottom: 40px;
+}
+
+.table dl {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #333;
+  border-top: none;
+  background: #E0E0E0;
+}
+
+.table dt {
+  width: 24%;
+  float: left;
+  padding: 30px 0;
+  border-top: 1px solid #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #E0E0E0;
+}
+
+.table dd {
+  width: 76%;
+  margin-left: 24%;
+  padding: 30px 40px;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  background: #fff;
+}
+
+/*
+youtube
+----------------------------- */
+.youtube {
+  padding-bottom: 120px;
+}
+
+.youtube .sec_ttl {
+  margin-bottom: 20px;
+}
+
+.youtube .video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.youtube .video iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+map
+----------------------------- */
+.googlemap {
+  padding-bottom: 120px;
+}
+
+.googlemap .sec_ttl {
+  margin-bottom: 20px;
+}
+
+.googlemap .map {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.googlemap .map iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------
+
+sp
+
+----------------------------- */
+@media screen and (max-width: 768px) {
+  /*
+under_base
+----------------------------- */
+  .top_p {
+    margin-bottom: 50px;
+    font-size: 4vw;
+  }
+  .hero {
+    height: 240px;
+    background-position: 65% 0;
+  }
+  .hero h2 {
+    top: 35%;
+    font-size: 12.8vw;
+  }
+  .menu {
+    margin: 20px 0 30px;
+    font-size: 4vw;
+  }
+  .menu .home_icon {
+    margin-right: 10px;
+  }
+  .menu .arrow_icon {
+    margin: 0 25px;
+  }
+  /*
+table
+----------------------------- */
+  .table .sec_ttl {
+    margin-bottom: 20px;
+  }
+  .table .top_p {
+    margin-bottom: 40px;
+  }
+  .table dl {
+    font-size: 0;
+    margin: 0px 0 80px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+  }
+  .table dl dt, .table dl dd {
+    height: auto;
+    padding: 15px 0;
+    margin-left: 0;
+  }
+  .table dl dt {
+    width: 100%;
+    font-weight: 700;
+    font-size: 4.6vw;
+    border-bottom: none;
+  }
+  .table dl dd {
+    width: 100%;
+    padding: 20px 5%;
+    padding-top: 70px;
+    font-size: 4vw;
+    border-left: none;
+  }
+  /*
+youtube
+----------------------------- */
+  .youtube {
+    padding-bottom: 80px;
+  }
+  .youtube p {
+    font-size: 4vw;
+  }
+  /*
+map
+----------------------------- */
+  .googlemap {
+    padding-bottom: 80px;
+  }
+  .googlemap p {
+    font-size: 4vw;
+  }
+}

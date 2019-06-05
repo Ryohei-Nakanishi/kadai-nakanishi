@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>下層②</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- CSS -->
+  <link href="css/common.css" rel="stylesheet" type="text/css" />
+  <link href="css/under2.css" rel="stylesheet" type="text/css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- Javescript -->
+  <!-- （全ページ共通のjsを記述してください） -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+<body class="body">
+  <header class="header" id="header">
+    <h1>
+        <span class="screen-reader-text">スネアクロス</span>
+        <a href="index.html"><img src="images/top_logo.png" srcset="images/top_logo.png 1x,images/top_logo@2x.png 2x" alt="スネアクロスロゴ"></a>
+      </h1>
+    <div id="nav_toggle">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- <div class="container clearfix"> -->
+    <nav class="main_nav_menu" onclick="">
+      <ul class="center">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="under1.html">下層ページ①</a></li>
+        <li><a href="under2.html">下層ページ②</a></li>
+      </ul>
+    </nav>
+    <!-- </div> -->
+  </header>
+  <!-- /#header.header -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>下層ページ②</h2>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+    <div class="container">
+      <section class="menu">
+        <p><a href="index.html"><i class="home_icon fas fa-home"></i>トップページ</a><i class="arrow_icon fas fa-chevron-right"></i><a href="under2.html">下層ページ②</a></p>
+      </section>
+      <!-- /.menu -->
+      <section class="form">
+        <div class="sec_ttl">
+          <h3>お問い合わせフォーム</h3>
+        </div>
+        <!-- /.sec_ttl -->
+        <p class="top_p">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+        <!-- /.top_p -->
+        <form action="confirm.php" method="post">
+          <dl>
+            <dt>名前</dt>
+            <dd><input type="text" class="name" name="name"></dd>
+            <dt>住所</dt>
+            <dd><input type="text" class="address" name="address"></dd>
+            <dt class="gender">性別</dt>
+            <dd class="gender">
+              <div class="radio02">
+                <input type="radio" name="radio02" class="radio02-input" id="radio02-01" checked>
+                <label for="radio02-01">男</label>
+                <input type="radio" name="radio02" class="radio02-input" id="radio02-02">
+                <label for="radio02-02">女</label>
+              </div>
+
+            </dd>
+            <dt>種類</dt>
+            <dd>
+              <select class="type" name="type" size="1">
+                <option value="">選択してください</option>
+                <option value="選択肢2">選択肢1</option>
+                <option value="選択肢2">選択肢2</option>
+                <option value="選択肢3">選択肢3</option>
+              </select>
+            </dd>
+          </dl>
+          <dl class="text_box">
+            <dt>内容</dt>
+            <dd class="mes_form"><textarea class="mes" name="mes"></textarea></dd>
+          </dl>
+          <div class="button center">
+            <button class="contact_btn" type="submit"><span class="arrow bbb">送信</span></button>
+          </div>
+          <!-- /.button -->
+        </form>
+      </section>
+      <!-- /.form -->
+
+    </div>
+    <!-- /.container -->
+  </main>
+  <footer class="footer center" id="footer">
+    <div class="footer1">
+      <a href="index.html"><img src="images/footer_logo.png" srcset="images/footer_logo.png 1x,images/footer_logo@2x.png 2x" alt="スネアクロスロゴ"></a>
+      <div class="footer_nav">
+        <ul>
+          <li class="footer_nav_list"><a href="index.html">トップページ</a></li>
+          <li class="footer_nav_list"><a href="under1.html">下層ページ①</a></li>
+          <li class="footer_nav_list"><a href="under2.html">下層ページ②</a></li>
+        </ul>
+      </div>
+      <!-- /.footer_nav -->
+    </div>
+    <!-- /.footer1 -->
+    <div class="footer2">
+      <p><small>Copyright&copy;snare cross, Inc. All rights reserved.</small></p>
+    </div>
+    <!-- /.footer2 -->
+  </footer>
+  <!-- /#footer.footer -->
+  <script>
+
+    //グローバルナビ
+    $(function () {
+      $('#nav_toggle').click(function () {
+        $("header").toggleClass('open');
+        $("nav").slideToggle(500);
+      });
+    });
+    // アンカーリンク
+    $(function () {
+      $('a[href*="#"]').click(function () {
+        var headerHight = 80; //ヘッダの高さ
+        var str = $(this).attr('href');
+        // アンカーリンクを切り出す
+        var cut_str = "#";
+        var index = str.indexOf(cut_str);
+        var href = str.slice(index);
+
+        // pagetop処理
+        if (href == '#') {
+          var target = $('body');
+          var position = target.offset().top;
+          $("html, body").animate({ scrollTop: position }, 550, "swing");
+          return false;
+        } else {
+
+          // ページ内にリンク先がある
+          if ($(href).length) {
+            console.log(headerHight);
+            var target = href;
+            var position = $(target).offset().top - headerHight;
+            $("html, body").animate({ scrollTop: position }, 550, "swing");
+            return false;
+          }
+        }
+      });
+    });
+
+    // ヘッダーを消させない
+    $(window).resize(function () {
+      var win = $(window).width();
+      var p = 768;
+      if (win > p) {
+        $(".main_nav_menu").show();
+      } else if (win < p) {
+        $(".main_nav_menu").hide();
+      }
+    });
+
+
+  </script>
+</body>
+</html>

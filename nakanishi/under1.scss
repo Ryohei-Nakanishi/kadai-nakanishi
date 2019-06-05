@@ -1,0 +1,252 @@
+/*
+under_base
+----------------------------- */
+.top_p{
+  margin-bottom: 50px;
+}
+
+.hero{
+  height: 240px;
+  position: relative;
+  background-image: url(../images/u_hero.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+  h2{
+    position: absolute;
+    top:  75px;
+    color:#fff;
+    font-size: 3.75rem;
+    font-weight: 700;
+  }
+}
+.menu{
+  margin: 20px 0 50px;
+  font-size: 1rem;
+  a{
+    font-weight: 700;
+  }
+  .home_icon{
+    margin-right: 10px;
+  }
+  .arrow_icon{
+    margin: 0 25px;
+  }
+}
+
+/*
+table
+----------------------------- */
+.table{
+    margin: 0px 0 80px;
+  .sec_ttl{
+	  margin-bottom: 20px;
+  }
+  .top_p{
+    margin-bottom: 40px;
+  }
+  // dl{
+  //   width: 100%;
+  //   height: auto;
+  //   font-size: 0;
+  //   overflow: hidden;
+  //   border-top: 1px solid #333;
+  //   border-right: 1px solid #333;
+  //   border-left: 1px solid #333;
+  //   dt,dd{
+  //     display: inline-block;
+  //     height: 100%;
+  //   // height: auto;
+  //     padding: 30px 0;
+  //     font-size: 1rem;
+  //   }
+  //   dt{
+  //     width: 24%;
+  //     background-color: #E0E0E0;
+  //     font-weight: 700;
+  //     border-right: 1px solid #333;
+  //   }
+  //   dd{
+  //     width: 76%;
+  //     padding-left: 40px;
+  //     padding-right: 40px;
+  //   }
+  // }
+  // .dl_last{
+  //   border-bottom: 1px solid #333;
+  // }
+  dl{
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #333;
+  border-top: none;
+  background: #E0E0E0;
+}
+dt{
+  width: 24%;
+  float: left;
+  padding: 30px 0;
+  border-top: 1px solid #333;
+  box-sizing: border-box;
+  background-color: #E0E0E0;
+}
+dd{
+  width: 76%;
+  margin-left: 24%;
+  padding: 30px 40px;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  background: #fff;
+}
+// dd:after{
+//   display: block;
+//   content: "";
+//   clear: both;
+//   width:0;
+//   height: 0;
+// }
+}
+
+/*
+youtube
+----------------------------- */
+.youtube{
+  padding-bottom: 120px;
+  .sec_ttl{
+	  margin-bottom: 20px;
+  }
+  .video{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+  }
+  .video iframe{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+
+/*
+map
+----------------------------- */
+.googlemap{
+  padding-bottom: 120px;
+  .sec_ttl{
+	  margin-bottom: 20px;
+  }
+  .map{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;
+  }
+  .map iframe{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+
+
+
+
+/*------------------------------
+
+sp
+
+----------------------------- */
+
+@media screen and ( max-width:768px){
+/*
+under_base
+----------------------------- */
+.top_p{
+  margin-bottom: 50px;
+  font-size: 4vw;
+}
+
+.hero{
+  height: 240px;
+  background-position: 65% 0;
+  h2{
+    top:  35%;
+    font-size: 12.8vw;
+  }
+}
+.menu{
+  margin: 20px 0 30px;
+  font-size: 4vw;
+  .home_icon{
+    margin-right: 10px;
+  }
+  .arrow_icon{
+    margin: 0 25px;
+  }
+}
+
+/*
+table
+----------------------------- */
+.table{
+  .sec_ttl{
+	  margin-bottom: 20px;
+  }
+  .top_p{
+    margin-bottom: 40px;
+  }
+  dl{
+    font-size: 0;
+    margin: 0px 0 80px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    dt,dd{
+      height: auto;
+      padding: 15px 0;
+      margin-left: 0;
+    }
+    dt{
+      width: 100%;
+      font-weight: 700;
+      font-size: 4.6vw;
+      border-bottom: none;
+    }
+    dd{
+      width: 100%;
+      padding: 20px 5%;
+      padding-top: 70px;
+      font-size: 4vw;
+      // border-top: 1px solid #333;
+      border-left: none;
+    }
+  }
+}
+
+/*
+youtube
+----------------------------- */
+.youtube{
+  padding-bottom: 80px;
+  p{
+    font-size: 4vw;
+  }
+}
+
+
+/*
+map
+----------------------------- */
+.googlemap{
+  padding-bottom: 80px;
+  p{
+    font-size: 4vw;
+  }
+}
+
+}
